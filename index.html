@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
+  <meta name="description" content="Open-Vocabulary Affordance Localization for Task Oriented Grasping">
+  <meta name="keywords" content="LLM, VLM, Open Vocabulary, Task Oriented Grasping">
   <meta property="og:title" content="OVAL-Grasp"/>
   <meta property="og:description" content="Open-Vocabulary Affordance Localization for Task Oriented Grasping"/>
   <meta property="og:url" content="https://ekjt.github.io/OVAL-Grasp/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/images/teaser.png" />
+  <meta property="og:image" content="static/images/teaser.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="OVAL-Grasp">
-  <meta name="twitter:description" content="Open-Vocabulary Affordance Localization for Task Oriented Grasping">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/teaser.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="LLM, VLM, Open Vocabulary, Task Oriented Grasping">
+  <meta name="twitter:title" content="OVAL-Grasp"/>
+  <meta name="twitter:description" content="Open-Vocabulary Affordance Localization for Task Oriented Grasping"/>
+  <meta name="twitter:image" content="static/images/teaser.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>OVAL-Grasp: Open-Vocabulary Affordance Localization for Task Oriented Grasping</title>
+  <title>OVAL‑Grasp: Open‑Vocabulary Affordance Localization for Task Oriented Grasping</title>
   <link rel="icon" type="image/x-icon" href="static/images/robot.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -45,84 +32,45 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">OVAL-Grasp: Open-Vocabulary Affordance Localization for Task Oriented Grasping</h1>
+            <h1 class="title is-1 publication-title">
+              OVAL‑Grasp: Open‑Vocabulary Affordance Localization for Task Oriented Grasping
+            </h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://ekjt.github.io/ekjtong/" target="_blank">Edmond Tong</a><sup>*1</sup>,</span>
-                <span class="author-block">
-                  Advaith Balaji<sup>*1</sup>,</span>
-                <span class="author-block">
-                  Anthony Opipari<sup>1</sup>,</span>
-                <span class="author-block">
-                  Stanley Lewis<sup>1</sup>,</span>
-                <span class="author-block">
-                  Zhen Zeng<sup>2</sup>,</span>
-                <span class="author-block">
-                  Odest Chadwicke Jenkins<sup>1</sup></span>
-                  </div>
-
-                <div class="is-size-5 publication-authors">
-                  <span class="author-block"><sup>*</sup>Equal Contribution<br>University of Michigan<sup>1</sup> and J.P. Morgan AI Research<sup>2</sup><br>ICRA 2024 VLMNM Workshop</span>
-                </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <!--
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-                    -->
-
-                    <!-- Supplementary PDF link -->
-                    <!--
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-                  -->
-
-
-                  
-                  <!-- Github link -->
-                  <!--
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-                -->
-                
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.11000" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
+                <a href="https://ekjt.github.io/ekjtong/" target="_blank">Edmond Tong</a><sup>*1</sup>,
+              </span>
+              <span class="author-block">
+                Advaith Balaji<sup>*1</sup>,
+              </span>
+              <span class="author-block">
+                Anthony Opipari<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Stanley Lewis<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Zhen Zeng<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Odest Chadwicke Jenkins<sup>1</sup>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>*</sup>Equal Contribution<br>
+                University of Michigan<sup>1</sup> and J.P. Morgan AI Research<sup>2</sup><br>
+                ISER 2025
+              </span>
+            </div>
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.11000" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
@@ -131,172 +79,113 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static\images\teaser.png" alt="Teaser">
-
-      <h2 class="subtitle has-text-centered">
-        Overview of Affordance-Prompting, a pipeline for open-vocabulary affordance segmentation and localization. </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            In order for robots to use tools effectively, they must understand the form and function of each tool they encounter. In other words, robots need to understand which actions each object affords, and where those affordances can be acted on.Ultimately, robots are expected to operate in unstructured human environments, where the set of objects and affordances is not known to the robot before deployment (i.e. the open-vocabulary setting). In this work we introduce OVAL-Prompt, a prompt-based approach for open-vocabulary affordance localization in RGB-D images. By leveraging a Vision Language Model (VLM) for open-vocabulary object part segmentation and a Large Language Model (LLM) to ground each part-segment-affordance, OVAL-Prompt demonstrates generalizability to novel object instances, categories, and affordances without domain-specific finetuning. Quantitative experiments demonstrate that without any finetuning, OVAL-Prompt achieves localization accuracy that is competitive with supervised baseline models. Moreover, qualitative experiments show that OVAL-Prompt enables affordance-based robot manipulation of open-vocabulary object instances and categories.          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Summary Video</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/nFO6LbTdGJ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Experiment Video</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/fXvYo-0AJek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/UMD.png" alt="MY ALT TEXT"/>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/system_overview_v2.png" alt="System Overview">
         <h2 class="subtitle has-text-centered">
-          Quantitative Results on the UMD Dataset
+          The robot generates task-oriented grasps by using an LLM to identify grasp‑relevant object parts, a VLM to segment them, and a heatmap to filter grasp candidates to fulfill the given task.
         </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/AGD20K.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Quantitative Results on the AGD20K Dataset
-        </h2>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!--
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
--->
-<!--End paper poster -->
 
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              To manipulate objects in novel, unstructured environments, robots need task-oriented grasps that target object parts based on the given task. Geometry-based methods often struggle with visually defined parts, occlusions, and unseen objects. We introduce OVAL‑Grasp, a zero‑shot open‑vocabulary approach to task‑oriented, affordance‑based grasping that uses large‑language models (LLM) and vision‑language models (VLM) to allow a robot to grasp objects at the correct part according to a given task. Given an RGB image and a task, OVAL‑Grasp identifies parts to grasp or avoid with an LLM, segments them with a VLM, and generates a 2D heatmap of actionable regions on the object. During our evaluations, we found that our method outperformed two task‑oriented grasping baselines on experiments with 20 household objects across three tasks each. OVAL‑Grasp successfully identifies and segments the correct object part 95% of the time and grasps the correct actionable area 78.3% of the time in real‑world experiments with the Fetch mobile manipulator. Additionally, OVAL‑Grasp finds correct object parts under partial occlusions, demonstrating an 80% part selection success rate in cluttered scenes, and we show the benefit of its modular design through ablation studies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--BibTex citation -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Summary Video</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/N0nZwmK__C4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Experiment Video</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/M2PrpD1ZlSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Results</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/image.png" alt="Quantitative Results"/>
+            <h2 class="subtitle has-text-centered">Quantitative Results</h2>
+          </div>
+          <div class="item">
+            <img src="static/images/clutter_3.png" alt="Qualitative Results"/>
+            <h2 class="subtitle has-text-centered">Qualitative Results</h2>
+          </div>
+          <div class="item">
+            <img src="static/images/qual_results.png" alt="Qualitative Results"/>
+            <h2 class="subtitle has-text-centered">Qualitative Results</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@misc{tong2024ovalprompt,
-        title={OVAL-Prompt: Open-Vocabulary Affordance Localization for Robot Manipulation through LLM Affordance-Grounding}, 
-        author={Edmond Tong and Anthony Opipari and Stanley Lewis and Zhen Zeng and Odest Chadwicke Jenkins},
-        year={2024},
-        eprint={2404.11000},
-        archivePrefix={arXiv},
-        primaryClass={cs.RO}
-  }</code></pre>
+  title={OVAL‑Prompt: Open‑Vocabulary Affordance Localization for Robot Manipulation through LLM Affordance‑Grounding},
+  author={Edmond Tong and Anthony Opipari and Stanley Lewis and Zhen Zeng and Odest Chadwicke Jenkins},
+  year={2024},
+  eprint={2404.11000},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> (adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project).<br>
+              Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
